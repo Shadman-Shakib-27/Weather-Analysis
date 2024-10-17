@@ -1,4 +1,4 @@
-# Disaster Hackathon 2.0
+<!-- # Disaster Hackathon 2.0
 
 Welcome to Disaster Hackathon 2.0! This project is a single-page application designed to provide users with information and tools related to disaster management and response.
 
@@ -45,4 +45,4 @@ Ensure you have the following installed:
 
    ```bash
    npm start
-   ```
+   ``` -->
