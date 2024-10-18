@@ -1,7 +1,7 @@
 import Container from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
-import image from "../../assets/Images/HeroBanner.jpg";
 import { motion } from "framer-motion";
+import image from "../../assets/Images/HeroBanner.jpg";
 
 const Hero = () => {
   const intro = {
@@ -34,18 +34,16 @@ const Hero = () => {
             >
               <motion.h1
                 variants={introChildren}
-                className="text-lg xxsm:text-xl md:text-3xl lg:text-4xl lg:font-extrabold font-bold leading-tight text-center md:text-left mt-16 sm:mt-0 md:mt-0"
+                className="text-lg xsm:text-xl md:text-3xl lg:text-4xl lg:font-extrabold font-bold leading-tight text-center md:text-left max-w-[100ch]"
               >
-                Welcome to EnviroMonitor.
-                <br />
-                Your Premier Platform for Environmental Disaster Prediction and
-                Historical <br /> Data Analysis
+                Welcome to Enviro Monitor Your Premier Platform for
+                Environmental Disaster Prediction and Historical Data Analysis
               </motion.h1>
               <motion.p
                 variants={introChildren}
-                className="text-sm xxsm:text-base sm:text-lg md:text-black lg:text-lg max-w-[55ch] mx-auto md:mx-0"
+                className="text-sm xsm:text-base sm:text-lg md:text-black lg:text-lg max-w-[55ch] mx-auto md:mx-0"
               >
-                Discover EnviroMonitor: Empowering disaster readiness with
+                Discover Enviro Monitor: Empowering disaster readiness with
                 cutting-edge AI technology. Experience real-time weather
                 insights, live drone footage for crisis response, and predictive
                 analytics using advanced machine learning. Stay informed, stay
