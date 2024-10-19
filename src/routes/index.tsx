@@ -1,9 +1,8 @@
 import App from "@/App";
 import NotFound from "@/components/shared/404";
 import Home from "@/pages/home/Home";
-import { createBrowserRouter } from "react-router-dom";
 import RealtimeDetails from "@/pages/home/RealtimeDetails";
-import RealtimeFloodAffectDetection from "@/pages/home/RealtimeFloodAffectDetection";
+import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -18,10 +17,6 @@ const router = createBrowserRouter([
       {
         path: "/realtime",
         element: <RealtimeDetails />,
-      },
-      {
-        path: "/realtime-flood-affected-detection",
-        element: <RealtimeFloodAffectDetection />,
       },
     ],
   },

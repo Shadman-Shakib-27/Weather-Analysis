@@ -1,21 +1,21 @@
 import { ArrowRight } from "lucide-react";
 import moment from "moment";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/Images/Logo.png";
+import Logo from "../../assets/Images/AgriMarine.png";
 import Container from "./Container";
 const Footer = () => {
   const year = moment().year();
   return (
-    <footer className="bg-[#15719f] text-light-gray">
+    <footer className="bg-gray-500 bg-nav_bg bg-cover bg-center mt-20 text-light-gray">
       <Container>
         <div className="flex flex-col md:flex-row justify-between gap-4 py-8">
           <div>
             <NavLink to="/" className="flex justify-center items-center">
-              <img src={Logo} className="size-14" alt="Weather Logo" />
-              <h1 className="text-white font-medium text-2xl pl-1">
-                <span className="text-white font-semibold">W</span>
-                eather Analysis
-              </h1>
+              <img
+                src={Logo}
+                className="h-20 w-60 hover:scale-110 hover:transition-all hover:duration-300"
+                alt="Weather Logo"
+              />
             </NavLink>
           </div>
           <div>

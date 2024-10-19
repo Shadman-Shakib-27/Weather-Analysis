@@ -20,7 +20,7 @@ const ScrollBar = () => {
       //@ts-ignore
       const valueContent = "⇧";
       //@ts-ignore
-      scrollProgress.style.background = `conic-gradient(#62a1c7 ${scrollValue}%,#FFFFFF ${scrollValue}%)`;
+      scrollProgress.style.background = `conic-gradient(#FFFFFF ${scrollValue}%,#262B20 ${scrollValue}%)`;
       //@ts-ignore
       progressValue.textContent = `${valueContent}`;
     }

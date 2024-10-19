@@ -17,7 +17,7 @@ const SectionTitle = ({ fTitle, lTitle, description }) => {
       className="w-[60%] pb-12 mx-auto flex flex-col justify-center items-center text-center gap-4"
     >
       <h1 className="font-extrabold lg:font-bold text-[20px] lg:text-4xl text-gray-900 ">
-        <span className="text-[#15719f]">{fTitle}</span> {lTitle}
+        <span className="text-[#262B30]">{fTitle}</span> {lTitle}
       </h1>
       <p className="text-[18px]">{description}</p>
     </motion.div>

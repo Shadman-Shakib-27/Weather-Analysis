@@ -16,7 +16,7 @@ import {
 } from "@material-tailwind/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/Images/Logo.png";
+import Logo from "../../assets/Images/AgriMarine.png";
 import Container from "./Container";
 
 const navListMenuItems = [
@@ -25,8 +25,12 @@ const navListMenuItems = [
     path: "/realtime",
   },
   {
-    title: "Flood Affected People",
-    path: "/realtime-flood-affected-detection",
+    title: "Protecting Hilsa",
+    path: "/Protecting Hilsa",
+  },
+  {
+    title: "Maximizing Crop Yields ",
+    path: "/Maximizing Crop Yields",
   },
 ];
 
@@ -36,13 +40,13 @@ export function NavListMenu() {
   const renderItems = navListMenuItems.map(({ title, path }, key) => (
     <NavLink to={path} key={key} className="block">
       {/* @ts-ignore */}
-      <MenuItem className="flex items-center gap-3 bg-[#15719f] rounded-lg">
+      <MenuItem className="flex items-center gap-3 rounded-lg">
         <div>
           {/* @ts-ignore */}
           <Typography
             variant="h6"
             color="black"
-            className="flex p-1 hover:text-gray-900  text-white  justify-center mx-20 items-center text-sm font-bold"
+            className="flex p-1 text-[#262B30] opacity-85 hover:opacity-100 justify-center mx-20 items-center text-sm font-bold"
           >
             {title}
           </Typography>
@@ -65,7 +69,7 @@ export function NavListMenu() {
           <Typography as="div" variant="small" className="font-bold">
             {/* @ts-ignore */}
             <ListItem
-              className="flex justify-center items-center gap-2 mt-[0px] py-2 lg:pr-4 pr-0 font-bold text-white text-[16px] hover:text-gray-900 hover:transition-all duration-300"
+              className="flex justify-center items-center gap-2 mt-[0px] py-2 lg:pr-4 pr-0 font-bold text-[#262B30] opacity-85 hover:opacity-100 text-[16px] hover:transition-all duration-300"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -105,20 +109,20 @@ export function NavList() {
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <NavLink to="/" className="font-medium">
         {/* @ts-ignore */}
-        <ListItem className="flex justify-center items-center font-bold hover:text-black hover:transition-all duration-300 text-white gap-2 py-2 lg:pr-4 pr-5">
+        <ListItem className="flex justify-center items-center font-bold text-[#262B30] hover:opacity-100 opacity-85 hover:transition-all duration-300  gap-2 py-2 lg:pr-4 pr-5">
           Home
         </ListItem>
       </NavLink>
       <NavListMenu />
       <NavLink to="/contact" className="font-medium">
         {/* @ts-ignore */}
-        <ListItem className="flex text-white justify-center hover:text-gray-900 hover:transition-all duration-300 font-bold items-center gap-2 py-2 pr-4">
+        <ListItem className="flex text-[#262B30] hover:opacity-100 opacity-80 justify-center  hover:transition-all duration-300 font-bold items-center gap-2 py-2 pr-4">
           Contact Us
         </ListItem>
       </NavLink>
       <NavLink to="/about" className="font-medium">
         {/* @ts-ignore */}
-        <ListItem className="flex text-white justify-center hover:text-gray-900  hover:transition-all duration-300 font-bold items-center gap-2 py-2 pr-4">
+        <ListItem className="flex text-[#262B30] hover:opacity-100 opacity-80  justify-center   hover:transition-all duration-300 font-bold items-center gap-2 py-2 pr-4">
           About Us
         </ListItem>
       </NavLink>
@@ -138,24 +142,24 @@ export default function NavbarWithMegaMenu() {
 
   return (
     //@ts-ignore
-    <Navbar className="mx-auto rounded-none bg-[#15719f] border-none px-4 max-w-full py-2">
+    <Navbar className="mx-auto rounded-none bg-white border-none sticky px-4 max-w-full py-0">
       <Container>
         <div className="flex items-center justify-between text-black-gray-900">
           <NavLink to="/" className="flex items-center">
-            <img src={Logo} className="size-12" alt="Weather Logo" />
-            <h1 className="text-white ml-2 font-medium text-xl sm:text-2xl">
-              <span className="text-white font-semibold">W</span>
-              eather Analysis
-            </h1>
+            <img
+              src={Logo}
+              className="h-20 w-60 hover:scale-110 hover:transition-all hover:duration-300"
+              alt="Weather Logo"
+            />
           </NavLink>
           <div className="hidden lg:flex items-center">
             <NavList />
           </div>
           <div onClick={() => setOpenNav(!openNav)} className="lg:hidden z-50">
             {openNav ? (
-              <XMarkIcon className="h-6 w-6 text-white" strokeWidth={3} />
+              <XMarkIcon className="h-6 w-6 text-[#262B30]" strokeWidth={3} />
             ) : (
-              <Bars3Icon className="h-6 w-6 text-white" strokeWidth={3} />
+              <Bars3Icon className="h-6 w-6 text-[#262B30]" strokeWidth={3} />
             )}
           </div>
         </div>

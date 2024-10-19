@@ -1,7 +1,6 @@
 import Container from "@/components/shared/Container";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import image from "../../assets/Images/HeroBanner.jpg";
 
 const Hero = () => {
   const intro = {
@@ -34,20 +33,25 @@ const Hero = () => {
             >
               <motion.h1
                 variants={introChildren}
-                className="text-lg xsm:text-xl md:text-3xl lg:text-4xl lg:font-extrabold font-bold leading-tight text-center md:text-left max-w-[100ch]"
+                className="text-lg xsm:text-xl md:text-3xl lg:text-4xl lg:font-extrabold font-bold leading-tight text-center md:text-left"
               >
-                Welcome to Enviro Monitor Your Premier Platform for
-                Environmental Disaster Prediction and Historical Data Analysis
+                Welcome To Agri Marine AI. <br />
+                Empowering Agriculture and Marine Conservation with AI.
+                Protecting Hilsa and Maximizing Crop Yields for a Sustainable
+                Future
               </motion.h1>
               <motion.p
                 variants={introChildren}
-                className="text-sm xsm:text-base sm:text-lg md:text-black lg:text-lg max-w-[55ch] mx-auto md:mx-0"
+                className="text-sm xsm:text-base sm:text-lg md:text-black lg:text-lg max-w-[50ch] text-justify mx-auto md:mx-0"
               >
-                Discover Enviro Monitor: Empowering disaster readiness with
-                cutting-edge AI technology. Experience real-time weather
-                insights, live drone footage for crisis response, and predictive
-                analytics using advanced machine learning. Stay informed, stay
-                prepared.
+                Our web application, AgriMarine AI, aims to address two serious
+                issues: optimizing agricultural output through machine
+                learning-based crop yield prediction and protecting the hilsa
+                fish and other marine resources by detecting illegal fishing
+                activities during the Hilsa breeding season. Our project targets
+                several SDGs that are critical for Bangladesh’s future,
+                including SDG 2: Zero Hunger, SDG 14: Life Below Water, and SDG
+                13: Climate Action.
               </motion.p>
               <motion.div
                 variants={introChildren}
@@ -75,8 +79,8 @@ const Hero = () => {
             className="relative flex justify-center"
           >
             <img
-              className="w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl rounded-md"
-              src={image}
+              className="w-full md:h-[550px] max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-xl rounded-md"
+              src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs43247-023-01116-6/MediaObjects/43247_2023_1116_Fig1_HTML.png"
               alt="Hero Banner"
             />
           </motion.div>

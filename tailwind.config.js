@@ -19,6 +19,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "nav_bg": "url('https://i.ibb.co.com/gmnZxbC/footer-bg-7e5aec06.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

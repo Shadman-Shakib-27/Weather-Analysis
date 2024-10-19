@@ -21,7 +21,7 @@ const RealtimeData = () => {
           <img
             src={imageSrc}
             alt="Sample"
-            className="rounded-md border hover:scale-105 hover:transition-all duration-500 border-[#62a1c7] shadow-md w-full md:w-11/12 lg:w-10/12"
+            className="rounded-md border hover:scale-105 hover:transition-all duration-500 border-[#262B30] shadow-md w-full md:w-11/12 lg:w-10/12"
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-4">

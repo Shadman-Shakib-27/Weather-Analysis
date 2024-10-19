@@ -375,7 +375,7 @@ const LineChart = () => {
           <select
             value={city}
             onChange={handleCityChange}
-            className="px-2 py-1 border w-[90%] border-[#62a1c7] rounded"
+            className="px-2 py-1 border w-[90%] border-[#262B30] rounded"
           >
             <option value="">Select Your City</option>
             {districts.map((district) => (
@@ -389,13 +389,13 @@ const LineChart = () => {
             placeholder="Enter Days"
             value={days}
             onChange={handleDaysChange}
-            className="px-2 py-1 border w-[90%] border-[#62a1c7] rounded"
+            className="px-2 py-1 border w-[90%] border-[#262B30] rounded"
             disabled={frequency !== "Custom"}
           />
           <select
             value={frequency}
             onChange={handleFrequencyChange}
-            className="px-2 py-1 border w-[90%] border-[#62a1c7] rounded"
+            className="px-2 py-1 border w-[90%] border-[#262B30] rounded"
           >
             <option value="Hourly">Hourly</option>
             <option value="Daily">Daily</option>
@@ -409,7 +409,7 @@ const LineChart = () => {
         )}
         {loading ? (
           <div className="flex justify-center items-center mt-16">
-            <ClipLoader color="#15719f" loading={loading} size={50} />
+            <ClipLoader color="#262B30" loading={loading} size={50} />
           </div>
         ) : (
           <motion.div
@@ -426,14 +426,14 @@ const LineChart = () => {
                 <div className="mb-8">
                   <div className="w-[60%] pb-12 mx-auto flex flex-col justify-center items-center text-center gap-4 mb-4">
                     <h1 className="font-bold text-xl lg:text-4xl text-black ">
-                      <span className="text-[#15719f]">Temperature</span>{" "}
+                      <span className="text-[#262B30]">Temperature</span>{" "}
                       Analysis
                       <hr className="mt-2" />
                     </h1>
                   </div>
                   <h5 className="text-center text-gray-500 font-bold mb-2 -mt-12">
                     Temperature in Last {days} Days For{" "}
-                    <span className="text-[#15719f] font-bold">{city}</span> -{" "}
+                    <span className="text-[#262B30] font-bold">{city}</span> -{" "}
                     {frequency}
                   </h5>
                   {/* @ts-ignore */}
@@ -448,7 +448,7 @@ const LineChart = () => {
                 <div className="mb-8">
                   <div className="w-[60%] pb-12 mx-auto flex flex-col justify-center items-center text-center gap-4 mb-4">
                     <h1 className="font-bold text-xl lg:text-4xl text-black ">
-                      <span className="text-[#15719f]">Humidity</span> Analysis
+                      <span className="text-[#262B30]">Humidity</span> Analysis
                       <hr className="mt-2" />
                     </h1>
                   </div>
@@ -469,7 +469,7 @@ const LineChart = () => {
                 <div className="mb-8">
                   <div className="w-[60%] pb-12 mx-auto flex flex-col justify-center items-center text-center gap-4 mb-4">
                     <h1 className="font-bold text-xl lg:text-4xl text-black ">
-                      <span className="text-[#15719f]">Wind Speed</span>{" "}
+                      <span className="text-[#262B30]">Wind Speed</span>{" "}
                       Analysis
                       <hr className="mt-2" />
                     </h1>
