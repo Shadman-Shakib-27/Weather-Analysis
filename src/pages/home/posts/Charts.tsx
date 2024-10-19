@@ -454,7 +454,7 @@ const LineChart = () => {
                   </div>
                   <h5 className="text-center text-gray-500 font-bold mb-2 -mt-12">
                     Humidity in Last {days} Days For{" "}
-                    <span className="text-[#15719f] font-bold">{city}</span> -{" "}
+                    <span className="text-[#262B30] font-bold">{city}</span> -{" "}
                     {frequency}
                   </h5>
                   {/* @ts-ignore */}
@@ -476,7 +476,7 @@ const LineChart = () => {
                   </div>
                   <h5 className="text-center text-gray-500 font-bold mb-2 -mt-12">
                     Wind Speed in Last {days} Days For{" "}
-                    <span className="text-[#15719f] font-bold">{city}</span> -{" "}
+                    <span className="text-[#262B30] font-bold">{city}</span> -{" "}
                     {frequency}
                   </h5>
                   {/* @ts-ignore */}

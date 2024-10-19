@@ -142,13 +142,13 @@ export default function NavbarWithMegaMenu() {
 
   return (
     //@ts-ignore
-    <Navbar className="mx-auto rounded-none bg-white border-none sticky px-4 max-w-full py-0">
+    <Navbar className="mx-auto rounded-none border-none sticky px-4 max-w-full py-0">
       <Container>
         <div className="flex items-center justify-between text-black-gray-900">
-          <NavLink to="/" className="flex items-center">
+          <NavLink to="/" className="">
             <img
               src={Logo}
-              className="h-20 w-60 hover:scale-110 hover:transition-all hover:duration-300"
+              className="h-20 w-60 -ml-6 md:ml-0 hover:scale-110 hover:transition-all hover:duration-300"
               alt="Weather Logo"
             />
           </NavLink>
