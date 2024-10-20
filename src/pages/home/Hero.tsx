@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <motion.div className="bg-dark-gray min-h-screen flex justify-center items-center mb-10 lg:mb-0 md:mb-0 h">
+    <motion.div className="bg-dark-gray min-h-screen flex justify-center items-center mb-10 lg:mb-0 md:mb-0">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-20 items-center">
           <motion.div
